@@ -46,7 +46,7 @@ public class PaintBrush : MonoBehaviour {
 		
 		var voxelData=VoxelRenderManager.Parse(voxleColors);
 		var path=Application.persistentDataPath+"/TestData"+GetHashCode()+".voxData";
-		IDGData.SerialData(path,voxelData);
+		//IDGData.SerialData(path,voxelData);
 		Debug.Log("SaveDataOver Path: "+path);
 	}
 	public void Init(V3 size){
