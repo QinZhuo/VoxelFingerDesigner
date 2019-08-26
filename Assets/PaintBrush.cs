@@ -44,10 +44,10 @@ public class PaintBrush : MonoBehaviour {
 	}
 	public void SaveVoxelData(){
 		
-		var voxelData=VoxelRenderManager.Parse(voxleColors);
-		var path=Application.persistentDataPath+"/TestData"+GetHashCode()+".voxData";
-		//IDGData.SerialData(path,voxelData);
-		Debug.Log("SaveDataOver Path: "+path);
+		// var voxelData=VoxelRenderManager.Parse(voxleColors);
+		// var path=Application.persistentDataPath+"/TestData"+GetHashCode()+".voxData";
+		// //IDGData.SerialData(path,voxelData);
+		// Debug.Log("SaveDataOver Path: "+path);
 	}
 	public void Init(V3 size){
 		camRoot.localScale=size.ToVector3();
@@ -79,7 +79,7 @@ public class PaintBrush : MonoBehaviour {
 	int colorIndex;
 	int brushColor{
 		set{
-			meshFilter.mesh=VoxelRenderManager.CreateViewMesh(value);
+			//meshFilter.mesh=VoxelRenderManager.CreateViewMesh(value);
 			colorIndex=value;
 		}
 		get{
